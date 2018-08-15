@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+#closeB {
+    display: inline-block;
+    background: green;
+    color: white;
+    font-size: 10pt;
+    padding: 5px;
+}
+#closeB:hover {
+    cursor: default;
+}

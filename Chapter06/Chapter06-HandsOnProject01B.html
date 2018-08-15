@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chapter06-HandsOnProject01B</title>
+
+        <link rel="stylesheet" href="Chapter06-HandsOnProject01.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Hands-on Project 6-1</h1>
+        </header>
+
+        <article>
+            <h2>Your form has been submitted</h2>
+
+            <div class="results">
+                <h3>You entered the following data:</h3>
+                
+                <script>
+                    var formData = location.search;
+                    formData = formData.substring(1, formData.length);
+        
+                    while(formData.indexOf("+") !== -1)
+                    {
+                        formData = formData.replace("+", " ");
+                    }
+        
+                    formData = decodeURIComponent(formData);
+        
+                    var formArray = formData.split("&");
+        
+                    for(var i = 0; i < formArray.length; i = i + 1)
+                    {
+                        document.write("<p>" + formArray[i] + "</p>");
+                    }
+                </script>
+            </div>
+        </article>
+    </body>
+</html>

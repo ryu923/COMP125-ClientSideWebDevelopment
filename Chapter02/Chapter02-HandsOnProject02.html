@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chapter02-HandsOnProject02</title>
+
+        <link rel="stylesheet" href="Chapter02-HandsOnProject02.css" />
+    </head>    
+
+    <body>
+        <header>
+            <h1>Hands-on Project 2-2</h1>
+        </header>
+
+        <article>
+            <h2>Contact Information</h2>
+            <form>
+                <fieldset id="contactInfo">
+                    <label>
+                        Name
+                        <input type="text" id="nameInput" name="name" />
+                    </label>
+                    <label>
+                        Email
+                        <input type="text" id="emailInput" name="email" />
+                    </label>
+                    <label>
+                        Phone
+                        <input type="text" id="phoneInput" name="phone" />
+                    </label>
+                </fieldset>
+                <fieldset id="submitButton">
+                    <input type="button" id="submit" value="Submit" />
+                </fieldset>
+            </form>
+        </article>
+
+        <script>
+            function submitInfo() {
+                var name = document.getElementById("nameInput");
+                var email = document.getElementById("emailInput");
+                var phone = document.getElementById("phoneInput");
+                
+                (name.value && email.value && phone.value)? alert("Thank you!") : alert("Please fill in all fields");
+            }
+
+            document.getElementById("submit").addEventListener("click", submitInfo, false);
+        </script>
+    </body>
+</html>

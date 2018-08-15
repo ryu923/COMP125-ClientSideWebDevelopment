@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UFT-8" />
+        <title>Chapter02-HandsOnProject03</title>
+
+        <link rel="stylesheet" href="Chapter02-HandsOnProject03.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Hands-on Project 2-3</h1>
+        </header>
+
+        <article>
+            <h2>Pick a shape</h2>
+
+            <div id="square">&nbsp;</div>
+            <div id="triangle">&nbsp;</div>
+            <div id="circle">&nbsp;</div>
+        </article>
+
+        <script>
+            function squareMessage() {
+                alert("You click the square");
+            }
+            function triangleMessage() {
+                alert("You click the triangle");
+            }
+            function circleMessage() {
+                alert("You click the circle");
+            }
+            
+            document.getElementById("square").addEventListener("click", squareMessage, false);
+            document.getElementById("triangle").addEventListener("click", triangleMessage, false);
+            document.getElementById("circle").addEventListener("click", circleMessage, false);
+        </script>
+    </body>
+</html>

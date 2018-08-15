@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chapter04-HandsOnProject01</title>
+
+        <link rel="stylesheet" href="Chapter04-HandsOnProject01.css" />
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <h1>Tuba Farm Equipment</h1>
+                <img src="images/tuba2.png" width="258" height="147" />
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Selectors</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Weather</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h2>Tractor Selector</h2>
+                <form>
+                    <fieldset>
+                        <legend><span>How many acres do you cultivate?</span></legend>
+                        <input type="number" id="acres" name="acres" />
+                        <label for="acres">acres</label>
+                    </fieldset>
+
+                    <fieldset id="cropsOption">
+                        <legend><span>Which crops do you grow?</span></legend>
+                        
+                        <input type="checkbox" id="wheat" name="crops" value="wheat" />
+                        <label for="wheat">Wheat</label>
+                        <input type="checkbox" id="corn" name="corn" value="corn" />
+                        <label for="corn">Corn</label>
+                        <input type="checkbox" id="soy" name="soy" value="soy" />
+                        <label for="soy">Soy</label>
+                        <input type="checkbox" id="alfalfa" name="alfalfa" value="alfalfa" />
+                        <label for="alfalfa">Alfalfa</label>
+                        <input type="checkbox" id="cotton" name="cotton" value="cotton" />
+                        <label for="wheat">Cotton</label>
+                        <input type="checkbox" id="sorghum" name="sorghum" value="sorghum" />
+                        <label for="sorghum">Sorghum</label>
+                        <input type="checkbox" id="rice" name="rice" value="rice" />
+                        <label for="rice">Rice</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><span>How many months per year do you work your fields?</span></legend>
+                        <input type="number" id="months" name="months" />
+                        <label for="months">months</label>
+                    </fieldset>
+
+                    <fieldset id="fuelOption">
+                        <legend><span>Which is your preferred fuel source?</span></legend>
+                        
+                        <input type="radio" id="E85" name="fuel" value="E85" />
+                        <label for="E85">E85</label>
+                        <input type="radio" id="biodiesel" name="fuel" value="biodiesel" />
+                        <label for="biodiesel">Biodiesel</label>
+                        <input type="radio" id="diesel" name="fuel" value="diesel" />
+                        <label for="diesel">Standard diesel</label>
+                    </fieldset>
+                </form>
+            </article>
+
+            <aside>
+                <h2 id="messageHead"></h2>
+                <p id="message"></p>
+            </aside>
+
+            <footer>
+                <p>Tuba Farm Equipment &bull; Fargo, ND</p>
+            </footer>
+        </div>
+        
+        <script src="Chapter04-HandsOnProject01.js"></script>
+    </body>
+</html>
